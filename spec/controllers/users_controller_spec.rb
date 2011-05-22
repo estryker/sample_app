@@ -9,7 +9,7 @@ describe UsersController do
     end
 
     it "should be successful" do
-      get :show, :id => @user
+      get :show, :id => @user # same as get :show, :id => @user.id
       response.should be_success
     end
 
